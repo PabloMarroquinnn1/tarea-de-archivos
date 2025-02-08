@@ -1,0 +1,35 @@
+// Archivo principal: index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Manager Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>List Manager Pro</h1>
+        <div class="menu">
+            <button onclick="showMenu('array')">Lista Contigua (Arreglo)</button>
+            <button onclick="showMenu('linked')">Lista Ligada (Simple)</button>
+            <button onclick="showMenu('doublyLinked')">Lista Doblemente Ligada</button>
+            <button onclick="showMenu('indexed')">Lista Indexada</button>
+        </div>
+        <div id="form" class="hidden">
+            <p id="prompt"></p>
+            <input type="text" id="inputField" placeholder="Ingrese datos separados por comas">
+            <div class="buttons">
+                <button onclick="processInput()">Procesar</button>
+                <button onclick="resetApp()">Reiniciar</button>
+            </div>
+        </div>
+        <div id="output" class="output hidden"></div>
+        <div id="history" class="history hidden">
+            <h3>Historial de Acciones</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
